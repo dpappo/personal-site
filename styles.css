@@ -9,6 +9,15 @@ form {
   display: inline;
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+}
+
 div.container{
   margin: auto;
   background-color: #EEF6F9;
