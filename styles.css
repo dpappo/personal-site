@@ -5,6 +5,10 @@ body {
   display: flex;
 }
 
+form {
+  display: inline;
+}
+
 div.container{
   margin: auto;
   background-color: #EEF6F9;
