@@ -4,6 +4,7 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 	padding:2px;
 	padding-top: 0;
 	border-width: 0;
+
 }
 body {
 	-epub-hyphens:auto;
@@ -277,6 +278,25 @@ p.nav-item{
 	flex-grow: 1;
 	width: 100%;
 	margin: 2px;
+	transition: 0.3s;
+	border-radius: 15px;
+}
+
+p.nav-item:hover{
+	width: 126%;
+	margin: 0px;
+	transition: 0.3s;
+	border-radius: 15px;
+	background-color: white;
+}
+
+section.contact:hover {
+	background-color: rgb(106, 142, 200);
+
+}
+
+p.nav-item:hover:nth-child(odd) {
+
 }
 
 @media only screen and (min-width: 1243px) {
