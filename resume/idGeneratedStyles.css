@@ -281,14 +281,14 @@ p.nav-item{
 	width: 100%;
 	margin: 2px;
 	transition: 0.3s;
-	border-radius: 15px;
+	border-radius: 100px;
 }
 
 p.nav-item:hover{
 	width: 126%;
 	margin: 0px;
 	transition: 0.3s;
-	border-radius: 15px;
+	border-radius: 100px;
 	background-color: white;
 }
 
