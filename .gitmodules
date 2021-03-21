@@ -1,0 +1,3 @@
+[submodule "tweeter"]
+	path = tweeter
+	url = git@github.com:dpappo/tweeter.git
