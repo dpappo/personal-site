@@ -16,20 +16,23 @@
 		<title>Dan Pappo's Resumé</title>
 	</head>
 	<body id="Dan_Pappo_Resume_March_2021" lang="en-US">
-	
+		
 		<div class="full-container">
-
-		<div class="upper-row">
 			
-			<section class="contact">
+			
+			<div class="upper-row">
 				
-				<p class="nav-item"><a target="_blank" class="link" href="http://www.danpappo.com"><i class="fas fa-home"></i><br> <span class="Hyperlink CharOverride-8">danpappo.com</span></a></p>
-				<p class="nav-item"><a target="_blank" class="link" href="https://calendly.com/dpappo/introduction"><i class="far fa-calendar-alt"></i><br> <span class="Hyperlink CharOverride-8">calendly.com/dpappo/</span></a></p>
-				<p class="nav-item"><a target="_blank" class="link" href="mailto:hi@danpappo.com"><i class="far fa-envelope"></a></i> <button class="button" data-clipboard-text="hi@danpappo.com">Copy email</button><br><a target="_blank" class="link" href="mailto:hi@danpappo.com"> <span id="emailaddress" class="Hyperlink CharOverride-8">hi@danpappo.com</span></a>
-					 </p>
-				<p class="nav-item"><a target="_blank" class="link" href="https://github.com/dpappo"><i class="fab fa-github"></i><br> <span class="Hyperlink CharOverride-8">github.com/dpappo</span></a></p>
-				<p class="nav-item"><a target="_blank" class="link" href="https://www.linkedin.com/in/danpappo/"><i class="fab fa-linkedin"></i><br> <span class="Hyperlink CharOverride-8">linkedin.com/in/danpappo/</span></a></p>
-				<p class="nav-item"><a target="_blank" class="link" href="https://www.google.com/maps/search/?api=1&query=Toronto&query_place_id=ChIJpTvG15DL1IkRd8S0KlBVNTI"><i class="fas fa-map-marker"></i><br> <span id="geolocation" class="Hyperlink CharOverride-8">Toronto</span></a></p>
+				<section class="contact">
+					
+					<p class="nav-item"><a target="_blank" class="link" href="http://www.danpappo.com"><i class="fas fa-home"></i><br> <span class="Hyperlink CharOverride-8">danpappo.com</span></a></p>
+					<p class="nav-item"><a target="_blank" class="link" href="https://calendly.com/dpappo/introduction"><i class="far fa-calendar-alt"></i><br> <span class="Hyperlink CharOverride-8">calendly.com/dpappo/</span></a></p>
+					<p class="nav-item"><a target="_blank" class="link" href="mailto:hi@danpappo.com"><i class="far fa-envelope"></a></i> <button class="button" data-clipboard-text="hi@danpappo.com">Copy email</button><br><a target="_blank" class="link" href="mailto:hi@danpappo.com"> <span id="emailaddress" class="Hyperlink CharOverride-8">hi@danpappo.com</span></a>
+					</p>
+					<p class="nav-item"><a target="_blank" class="link" href="https://github.com/dpappo"><i class="fab fa-github"></i><br> <span class="Hyperlink CharOverride-8">github.com/dpappo</span></a></p>
+					<p class="nav-item"><a target="_blank" class="link" href="https://www.linkedin.com/in/danpappo/"><i class="fab fa-linkedin"></i><br> <span class="Hyperlink CharOverride-8">linkedin.com/in/danpappo/</span></a></p>
+					<p class="nav-item"><a target="_blank" class="link" href="https://www.google.com/maps/search/?api=1&query=Toronto&query_place_id=ChIJpTvG15DL1IkRd8S0KlBVNTI"><i class="fas fa-map-marker"></i><br> <span id="geolocation" class="Hyperlink CharOverride-8">Toronto</span></a></p>
+					<p class="nav-item"><a target="_blank" id="darkmodea" onclick="darkMode()" class="link"><i id="darkmodei" class="fas fa-moon"></i><br> <span id="darkmodespan" class="Hyperlink CharOverride-8">Dark Mode</span></a></p>
+					<!-- <button id="darkmode" onclick="darkMode()">Toggle dark mode</button> -->
 			</section>
 			
 		<div id="_idContainer004" class="Basic-Text-Frame">
@@ -138,5 +141,18 @@
 
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19554180.js"></script>
 <script>new ClipboardJS('.button')</script>
+<script>function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+	
+	if(element.classList.contains("dark-mode")) {
+		document.getElementById("darkmodespan").innerHTML = "Light Mode"
+		document.getElementById("darkmodei").className = "fas fa-sun"
+	} else {
+		document.getElementById("darkmodespan").innerHTML = "Dark Mode"
+		document.getElementById("darkmodei").className = "fas fa-moon"
+	}
+
+}</script>
 </body>
 </html>

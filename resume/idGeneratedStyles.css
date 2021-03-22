@@ -32,7 +32,6 @@ div.Basic-Text-Frame {
 	border-style:solid;
 }
 p.Basic-Paragraph {
-	color:#000000;
 	font-family:"Adobe Caslon Pro", serif;
 	font-size:11px;
 	font-style:normal;
@@ -54,7 +53,7 @@ p.Basic-Paragraph {
 }
 li.Paragraph-Style-1, p.Paragraph-Style-1 {
 	-epub-hyphens:none;
-	color:#000000;
+	
 	font-family:"Adobe Caslon Pro", serif;
 	font-size:14px;
 	font-style:normal;
@@ -75,7 +74,7 @@ li.Paragraph-Style-1, p.Paragraph-Style-1 {
 	widows:1;
 }
 span.Avenir-Headline {
-	color:#000000;
+	
 	font-family:"Avenir Black", sans-serif;
 	font-size:13px;
 	font-style:normal;
@@ -86,7 +85,7 @@ span.Avenir-Headline {
 	line-height: 34px;
 }
 span.Avenir-Headline-Red {
-	color:#000000;
+	
 	font-family:"Avenir Black", sans-serif;
 	font-size:13px;
 	font-style:normal;
@@ -96,7 +95,7 @@ span.Avenir-Headline-Red {
 	text-transform:uppercase;
 }
 span.Headline-- {
-	/* color:#000000; */
+	/*  */
 	font-family:"Avenir Black", sans-serif;
 	font-size:22px;
 	font-style:normal;
@@ -110,7 +109,7 @@ span.Hyperlink {
 	text-decoration:underline;
 }
 span.Job-Location {
-	color:#000000;
+	
 	font-family:"Avenir Black", sans-serif;
 	font-size:14px;
 	font-style:normal;
@@ -120,7 +119,7 @@ span.Job-Location {
 	line-height: 23px;
 }
 span.Job-Title {
-	color:#000000;
+	
 	font-family:Avenir, sans-serif;
 	font-size:14px;
 	font-style:normal;
@@ -129,7 +128,7 @@ span.Job-Title {
 	text-transform:none;
 }
 span.Time---Place {
-	color:#000000;
+	
 	font-family:"Avenir Book", sans-serif;
 	font-size:14px;
 	font-style:italic;
@@ -187,14 +186,14 @@ span.CharOverride-3 {
 	font-size:13px;
 }
 span.CharOverride-4 {
-	color:#000000;
+	
 	font-family:"Avenir Black", sans-serif;
 	font-size:11px;
 	font-style:normal;
 	font-weight:800;
 }
 span.CharOverride-5 {
-	color:#000000;
+	
 	font-family:Avenir, sans-serif;
 	font-size:11px;
 	font-style:normal;
@@ -205,20 +204,20 @@ span.CharOverride-6 {
 	font-size:21px;
 }
 span.CharOverride-7 {
-	color:#000000;
+	
 	font-size:37px;
 }
 span.CharOverride-8 {
 	font-size:14px;
 }
 span.CharOverride-9 {
-	color:#000000;
+	
 	font-size:28px;
 }
 
 
 @media print {
-	header nav, footer, button {
+	header nav, footer, button, #darkmode, .widget {
 		display: none;
 		}
 
@@ -245,6 +244,7 @@ section.contact{
 	border: 1px solid;
 	border-radius: 15px;
 	width: 100%;
+	background-color: white;
 }
 
 i {
@@ -284,23 +284,6 @@ p.nav-item{
 	border-radius: 100px;
 }
 
-p.nav-item:hover{
-	width: 126%;
-	margin: 0px;
-	transition: 0.3s;
-	border-radius: 100px;
-	background-color: white;
-}
-
-section.contact:hover {
-	background-color: rgb(125, 143, 172);
-
-}
-
-p.nav-item:hover:nth-child(odd) {
-
-}
-
 @media only screen and (min-width: 1243px) {
 body {
 	margin-left: 10%;
@@ -317,4 +300,13 @@ div.project{
 #projects-para{
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+
+.dark-mode {
+  background-color: #152028;
+  color: white;
+}
+
+#darkmodea {
+	cursor: pointer;
 }
