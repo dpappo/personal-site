@@ -26,14 +26,56 @@
 					
 					<p class="nav-item"><a target="_blank" class="link" href="http://www.danpappo.com"><i class="fas fa-home"></i><br> <span class="Hyperlink CharOverride-8">danpappo.com</span></a></p>
 					<p class="nav-item"><a target="_blank" class="link" href="https://calendly.com/dpappo/introduction"><i class="far fa-calendar-alt"></i><br> <span class="Hyperlink CharOverride-8">calendly.com/dpappo/</span></a></p>
-					<p class="nav-item"><a target="_blank" class="link" href="mailto:hi@danpappo.com"><i class="far fa-envelope"></a></i> <button class="button" data-clipboard-text="hi@danpappo.com">Copy email</button><br><a target="_blank" class="link" href="mailto:hi@danpappo.com"> <span id="emailaddress" class="Hyperlink CharOverride-8">hi@danpappo.com</span></a>
+					<p class="nav-item"><a target="_blank" class="link" href="mailto:hi@danpappo.com"><i class="far fa-envelope"></a></i> <button class="button-email" data-clipboard-text="hi@danpappo.com">Copy email</button><br><a target="_blank" class="link" href="mailto:hi@danpappo.com"> <span id="emailaddress" class="Hyperlink CharOverride-8">hi@danpappo.com</span></a>
 					</p>
 					<p class="nav-item"><a target="_blank" class="link" href="https://github.com/dpappo"><i class="fab fa-github"></i><br> <span class="Hyperlink CharOverride-8">github.com/dpappo</span></a></p>
 					<p class="nav-item"><a target="_blank" class="link" href="https://www.linkedin.com/in/danpappo/"><i class="fab fa-linkedin"></i><br> <span class="Hyperlink CharOverride-8">linkedin.com/in/danpappo/</span></a></p>
 					<p class="nav-item"><a target="_blank" class="link" href="https://www.google.com/maps/search/?api=1&query=Toronto&query_place_id=ChIJpTvG15DL1IkRd8S0KlBVNTI"><i class="fas fa-map-marker"></i><br> <span id="geolocation" class="Hyperlink CharOverride-8">Toronto</span></a></p>
 					<p class="nav-item"><a target="_blank" id="darkmodea" onclick="darkMode()" class="link"><i id="darkmodei" class="fas fa-moon"></i><br> <span id="darkmodespan" class="Hyperlink CharOverride-8">Dark Mode</span></a></p>
-					<!-- <button id="darkmode" onclick="darkMode()">Toggle dark mode</button> -->
-			</section>
+					<p class="nav-item"><a target="_blank" id="sharea" class="link"><i id="sharei" class="fas fa-share-alt-square"></i><br> <span class="Hyperlink CharOverride-8">Share</span></a></p>
+					
+					
+				</section>
+			</div>
+			
+			<div class="shareDiv">
+
+				<header class="share">
+					<h3 class="dialog-title"><span class="Job-Location">Share this resumé</span></h3>
+					<button class="close-button"><use href="#close"></use>Close</button>
+				</header>
+				<div class="targets">
+
+					
+					<a class="button-share" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.danpappo.com/resume">
+						
+							<use href="#linkedin"></use>
+						
+						<span><i class="fab fa-linkedin-in"></i>
+
+						</span>
+					</a>
+					
+					<a class="button-share" target="_blank" href="mailto:?cc=hi@danpappo.com&subject=You've%20gotta%20hire%20this%20guy&body=Seriously, check out this great resume: http://www.danpappo.com/resume">
+							<use href="#email"></use>
+						<span><i class="far fa-envelope"></i></span>
+					</a>
+
+					<a class="button-share" target="_blank" href="https://twitter.com/intent/tweet?url=Check out this awesome resume! http://www.danpappo.com/resume">
+							<use href="#twitter"></use>
+						<span><i class="fab fa-twitter"></i></span>
+					</a>
+					<a class="button-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.danpappo.com/resume">
+							<use href="#facebook"></use>
+						<span><i class="fab fa-facebook-f"></i></span>
+					</a>
+					
+				</div>
+				<div class="sharelink">
+					<div class="pen-url"><span class="Job-Title">http://www.danpappo.com/resume</span></div>
+					<button class="copy-link" data-clipboard-text="http://www.danpappo.com/resume">Copy Link</button>
+				</div>
+				</div>
 			
 		<div id="_idContainer004" class="Basic-Text-Frame">
 
@@ -140,7 +182,8 @@
 </div>
 
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19554180.js"></script>
-<script>new ClipboardJS('.button')</script>
+<script>new ClipboardJS('.button-email')</script>
+<script>new ClipboardJS('.copy-link')</script>
 <script>function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
@@ -152,7 +195,38 @@
 		document.getElementById("darkmodespan").innerHTML = "Dark Mode"
 		document.getElementById("darkmodei").className = "fas fa-moon"
 	}
+}
 
-}</script>
+const shareButton = document.querySelector('#sharea');
+const shareDialog = document.querySelector('.shareDiv');
+const closeButton = document.querySelector('.close-button');
+
+shareButton.addEventListener('click', event => {
+  shareDialog.classList.add('is-open');
+});
+
+closeButton.addEventListener('click', event => {
+  shareDialog.classList.remove('is-open');
+});
+
+document.getElementById("sharea").addEventListener("click", event => {
+  console.log("Sharing")
+	if (navigator.share) {
+    navigator.share({
+      title: "Dan Pappo's Resumé",
+      url: 'http://www.danpappo.com/resume'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+  } else {
+    console.log("In else")
+		shareDialog.classList.add('is-open');
+
+  }
+});
+
+
+</script>
 </body>
 </html>
