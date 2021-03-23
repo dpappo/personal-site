@@ -262,6 +262,14 @@ a {
 	font-family: 'Space Grotesk', sans-serif;
 }
 
+i {
+	color: rgb(41, 120, 238);
+}
+
+i:hover {
+	color: rgb(93, 113, 145);
+}
+
 a:hover{
 	color: rgb(93, 113, 145);
 }
