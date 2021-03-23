@@ -16,6 +16,7 @@ body {
 	flex-direction: row;
 	margin-bottom: 0;
 	padding-bottom: 0;
+	transition: 2s;
 }
 
 div.left-column {
@@ -33,6 +34,7 @@ div.Basic-Text-Frame {
 }
 p.Basic-Paragraph {
 	font-family:"Adobe Caslon Pro", serif;
+
 	font-size:11px;
 	font-style:normal;
 	font-variant:normal;
@@ -53,8 +55,7 @@ p.Basic-Paragraph {
 }
 li.Paragraph-Style-1, p.Paragraph-Style-1 {
 	-epub-hyphens:none;
-	
-	font-family:"Adobe Caslon Pro", serif;
+	font-family: 'Space Grotesk', sans-serif;
 	font-size:14px;
 	font-style:normal;
 	font-variant:normal;
@@ -81,7 +82,6 @@ span.Avenir-Headline {
 	font-variant:normal;
 	font-weight:800;
 	text-decoration:underline;
-	text-transform:uppercase;
 	line-height: 34px;
 }
 span.Avenir-Headline-Red {
@@ -97,16 +97,16 @@ span.Avenir-Headline-Red {
 span.Headline-- {
 	/*  */
 	font-family:"Avenir Black", sans-serif;
-	font-size:22px;
+	font-size:35px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:800;
-	text-decoration:underline;
+	/* text-decoration:underline; */
 	text-transform:none;
 }
 span.Hyperlink {
-	color:#215e9e;
 	text-decoration:underline;
+	font-family: 'Space Grotesk', sans-serif;
 }
 span.Job-Location {
 	
@@ -234,6 +234,7 @@ div.lower-row{
 	margin-top: 0;
 	display: flex;
 	flex-direction: row;
+	transition: 2s;
 }
 
 section.contact{
@@ -244,7 +245,6 @@ section.contact{
 	border: 1px solid;
 	border-radius: 15px;
 	width: 100%;
-	background-color: white;
 }
 
 i {
@@ -259,10 +259,11 @@ div.project-title {
 
 a {
 	color: rgb(41, 120, 238);
+	font-family: ;
 }
 
 a:hover{
-	color: rgb(17, 57, 116);
+	color: rgb(93, 113, 145);
 }
 
 button {
@@ -306,6 +307,7 @@ div.project{
 .dark-mode {
   background-color: #152028;
   color: #d4d4d4;
+	/* transition: 2s; */
 }
 
 #darkmodea {
@@ -396,7 +398,9 @@ header {
 }
 
 .close-button {
-  padding: 2px;
+  padding: 6px;
+	height: fit-content;
+	margin: 10px
 }
 
 .close-button svg {
@@ -440,5 +444,12 @@ header {
 	div.project {
 		margin: 2%;
 	}
+
+}
+@media only screen and (max-width: 547px) {
+
+	#_idContainer004 {
+		flex-direction: column;
+	}	
 
 }

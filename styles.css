@@ -395,7 +395,7 @@ appearance: none;
   }}
 
 
-  @media only screen and (max-height: 773px) {
+  @media only screen and (max-height: 644px) {
     div.photo{
       display: none;
     }
