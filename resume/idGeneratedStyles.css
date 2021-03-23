@@ -270,6 +270,7 @@ button {
 	border-radius: 5px;
 	border: 1px solid;
 	cursor: pointer;
+	background-color: white;
 }
 
 button:active {
