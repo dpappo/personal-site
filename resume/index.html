@@ -216,7 +216,7 @@ closeButton.addEventListener('click', event => {
 });
 
 document.getElementById("sharea").addEventListener("click", event => {
-	if (navigator.share) {
+	if (navigator.canShare) {
     navigator.share({
       title: "Dan Pappo's Resumé",
       url: 'https://danpappo.com/resume'
