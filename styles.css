@@ -13,6 +13,15 @@ div.form{
   margin-bottom: 4%;
 }
 
+div.project-container {
+  min-height:80%
+}
+
+
+div.right-column.Tweeter {
+  margin-left: 4%;
+  }
+
 input.work {
   font-size: 2em;
   margin-right: 7%;
@@ -172,12 +181,32 @@ img.project-image {
     display: flex;  
   }
 
+  div#Alfresco-container {
+    flex-direction: row;
+  }
+
+  div.project-container {
+    min-height: 60%;
+  }
+
+  input.work {
+    font-size: 1em;
+    margin-right: 7%;
+  }
+  input.contact {
+    font-size: 1em;
+  }
+
   img.project-image {
     max-width: 246px;
   }
 
   div#Tweeter-container {
-    flex-direction: column-reverse;
+    flex-direction: row;
+  }
+
+  p.subtitle {
+    font-size: 1em;
   }
 
   div.left-column.Tweeter {
@@ -216,7 +245,7 @@ img.project-image {
   h2.subtitle{
     color: #E0957B;
     font-size: 3em;
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     margin-right: 0%;
   }
   
@@ -713,10 +742,4 @@ appearance: none;
     margin: 5%;
   }
 
-  div.right-column.Tweeter {
-    margin-left: 4%;
-    }
 
-div.project-container {
-  min-height:80%
-}
