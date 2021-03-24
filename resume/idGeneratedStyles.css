@@ -467,5 +467,13 @@ header {
 		display: none !important;
 	}
 
+	body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+		margin: 0;
+		/* margin-right: 2%; */
+		padding: 1px;
+		padding-top: 0;
+		border-width: 0;
+	}
+
 	@page { size: auto;  margin: 0mm; }
 }
