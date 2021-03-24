@@ -42,7 +42,7 @@ div.text {
 h1.title{
   color:#0E6D76;
   font-size: 4.5em;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   margin-top: 6%;
   font-weight: 600;
 }
@@ -50,7 +50,7 @@ h1.title{
 h2.subtitle{
   color: #E0957B;
   font-size: 3em;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   margin-right: 5%;
 }
 
