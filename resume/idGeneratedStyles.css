@@ -1,17 +1,18 @@
 body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 	margin: 0;
 	/* margin-right: 2%; */
-	padding:2px;
+	padding:1px;
 	padding-top: 0;
 	border-width: 0;
-
 }
+
 body {
 	-epub-hyphens:auto;
 }
 
 #_idContainer004{
 	margin: 2%;
+	margin-top: 1%;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 0;
@@ -39,11 +40,10 @@ p.Basic-Paragraph {
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
-	line-height:1.273;
+	line-height:1.1;
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
-	margin-top:2px;
 	orphans:1;
 	page-break-after:auto;
 	page-break-before:auto;
@@ -152,7 +152,7 @@ p.ParaOverride-4 {
 p.ParaOverride-5 {
 	text-align:justify;
 	text-align-last:left;
-	margin-bottom: 15px;
+	margin-bottom: 6px;
 }
 p.ParaOverride-9 {
 	text-align:justify;
@@ -216,18 +216,7 @@ span.CharOverride-9 {
 }
 
 
-@media print {
-	header nav, footer, button, #darkmode, .widget, .hide-on-share {
-		display: none;
-	}
-	div.Application__WidgetAppContainer-sc-1f2l0a1-0.dvBAhE.widget-app-container{
-		display: none !important;
-	}
-	div#hubspot-messages-iframe-container{
-		display: none !important;
-	}
-	@page { size: auto;  margin: 0mm; }
-}
+
 
 div.full-container {
 	display: flex;
@@ -310,6 +299,7 @@ body {
 div.project{
 	margin: 5px;
 	margin-top: 0;
+	width: fit-content;
 }
 
 #projects-para{
@@ -320,7 +310,6 @@ div.project{
 .dark-mode {
   background-color: #152028;
   color: #d4d4d4;
-	/* transition: 2s; */
 }
 
 #darkmodea {
@@ -465,4 +454,18 @@ header {
 		flex-direction: column;
 	}	
 
+}
+
+@media print {
+	header nav, footer, button, #darkmode, .widget, .hide-on-share {
+		display: none !important;
+	}
+	div.Application__WidgetAppContainer-sc-1f2l0a1-0.dvBAhE.widget-app-container{
+		display: none !important;
+	}
+	div#hubspot-messages-iframe-container{
+		display: none !important;
+	}
+
+	@page { size: auto;  margin: 0mm; }
 }
