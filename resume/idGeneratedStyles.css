@@ -219,13 +219,14 @@ span.CharOverride-9 {
 @media print {
 	header nav, footer, button, #darkmode, .widget, .hide-on-share {
 		display: none;
-		}
-
-		div.widget {
-			display: none !important;
-		}
-
-		@page { size: auto;  margin: 0mm; }
+	}
+	div.Application__WidgetAppContainer-sc-1f2l0a1-0.dvBAhE.widget-app-container{
+		display: none !important;
+	}
+	div#hubspot-messages-iframe-container{
+		display: none !important;
+	}
+	@page { size: auto;  margin: 0mm; }
 }
 
 div.full-container {
