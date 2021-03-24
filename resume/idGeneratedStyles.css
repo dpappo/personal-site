@@ -476,5 +476,14 @@ header {
 		border-width: 0;
 	}
 
+	p.nav-item{
+		flex-grow: 1;
+		width: 100%;
+		margin: 2px;
+		transition: 0.3s;
+		border-radius: 100px;
+		padding-top: 0px;
+	}
+
 	@page { size: auto;  margin: 0mm; }
 }
