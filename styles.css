@@ -1,8 +1,8 @@
 body {
-  background-color: #85c4be;
-/* display: flex; */
-  height: 90vh;
+  height: 98vh;
   display: flex;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 form {
@@ -530,4 +530,67 @@ appearance: none;
       justify-content: center;
     }
     
+  }
+
+  div#card{
+    height: 100vh;
+    background-color: #85c4be;
+    width: 100%;
+    display: flex;
+  }
+  
+  div#Alfresco{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, #85C4BE 0%, #FEDDD3 100%);
+    }
+  
+  
+  div#Alfresco-feedback{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, #FEDDD3 0%, #0E6D76 100%);
+      }
+  
+    div#Tweeter{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, #0E6D76 0%, #EEF6F9 100%);
+      }
+    div#get-in-touch{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, #EEF6F9 0%, #E0957B 100%);
+        }
+
+  div#Alfresco-container {
+    background: #FFFFFF;
+    backdrop-filter: blur(4px);
+  }
+
+  h1#Alfresco {
+    font-family: 'Lobster', cursive;
+    color: #5088F7;
+  }
+  h1#Alfresco-feedback {
+    font-family: 'Lobster', cursive;
+    color: #5088F7;
+    margin: 10px;
+  }
+
+  div#Alfresco-feedback-container {
+    min-height: 95vh;
+  }
+
+  h1#Tweeter {
+    font-family: 'Bungee', cursive;
+    color: #5088F7;
+  }
+
+  img.project-image {
+    max-width: 100%;
   }
