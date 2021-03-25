@@ -27,7 +27,7 @@ div.left-column {
 
 div.right-column {
 	width: 100%;
-	align-self: flex-end;
+	align-self: center;
 }
 
 div.Basic-Text-Frame {
