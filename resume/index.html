@@ -268,6 +268,31 @@ if (window.location.href.indexOf("#share") > -1) {
 	shareDialog.classList.add('is-open')
 }
 
+document.getElementById("toura").addEventListener("click", event => {
+	introJs().setOptions({
+  exitOnEsc: true,
+  keyboardNavigation: true,
+  steps: [{
+    intro: "Hi, my name is Dan, and welcome to my resumé! You're welcome to walk through this quick tour, or hit the X in the top right if you know exactly where you'd like to go."
+  }, {
+    element: document.querySelector('#summary'),
+    intro: "First, I'd like to introduce myself: on a personal and professional level, here is who I am and how I approach the world."
+  }, {
+    element: document.querySelector('#first-experience '),
+    intro: "I've been working in Health Tech for about 6 years now. I've worked in academic settings, small, and medium sized companies focussing on everything from obesity to patient intake management software."
+  }, {
+    element: document.querySelector('.lower-row'),
+    intro: "Most recently, I've been improving my coding skills at a coding bootcamp. Here are some of the projects that I've been cooking up."
+  }, {
+    element: document.querySelector('.contact'),
+    intro: "Lastly, here's how to get in touch with me."
+  }, {
+    element: document.querySelector('html'),
+    intro: "And that's my resume! Feel free to get in touch if you've got any questions. Cheers!"
+  }]
+}).start();
+});
+
 if (window.location.href.indexOf("#tour") > -1) {
 	introJs().setOptions({
   exitOnEsc: true,
