@@ -22,10 +22,17 @@
 </head>
 <body>
   
-  <h1>Dan Pappo.com</h1>
+  <h1 ><span onclick="play()">Dan Pappo.com</span></h1>
   <canvas id="field">
   </canvas>
-  <!-- <audio autoplay><source src="./Star Trek The Next Generation - End Credit.mp3" type="audio/mp3"></audio> -->
+  <audio id="audio"><source src="./Star Trek The Next Generation - End Credit.mp3" type="audio/mp3"></audio>
+
+  <script>
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
 
   <script>
 var getUrlParameter = function getUrlParameter(sParam) {

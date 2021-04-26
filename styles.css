@@ -37,6 +37,10 @@ h1 {
   /* display: table; */
 }
 
+span:hover {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: 'Krupper';
   src: url('./Krupper.eot'); /* IE9 Compat Modes */
